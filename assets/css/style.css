@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --transition-main: all 0.3s linear;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.join-btn,
+.book-btn {
+    background: rgb(167, 226, 255);
+    background: linear-gradient(90deg, rgba(167, 226, 255, 1) 0%, rgba(0, 149, 222, 1) 100%);
+    border: none;
+    padding: 8px 22px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    transition: var(--transition-main);
+}
+
+.book-btn {
+    padding: 14px 28px;
+    font-size: 18px;
+}
+
+.join-btn:hover {
+    background: rgb(0, 149, 222);
+    background: linear-gradient(90deg, rgba(0, 149, 222, 1) 0%, rgba(167, 226, 255, 1) 100%);
+}
+
+.book-btn:hover {
+    background: rgb(0, 149, 222);
+    background: linear-gradient(90deg, rgba(0, 149, 222, 1) 0%, rgba(167, 226, 255, 1) 100%);
+}
+
+.book-btn i {
+    transition: var(--transition-main);
+    display: inline-block;
+}
+
+.book-btn:hover i {
+    transform: translateX(5px);
+}
+
+.menu-btn {
+    font-size: 26px;
+}
+
+.offcanvas.offcanvas-start {
+    width: 300px;
+}
+
+.btn-close.close {
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    padding: 10px;
+    padding-top: 12px;
+    background-color: #4a4b55;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.btn-close {
+    color: white;
+    background-image: none;
+    font-size: 20px;
+}
+
+.offcanvas {
+    background-color: #222222;
+}
+
+.aside-menus li {
+    color: white;
+    padding: 8px 14px;
+}
+
+.aside-menus li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menus li a {
+    color: #3D3D3D;
+}
+
+.active {
+    color: #0069AB !important;
+}
+
+/* Main-Page */
+.home {
+    height: 100%;
+}
+
+h1 span {
+    background: rgb(1, 121, 180);
+    background: linear-gradient(90deg, rgba(1, 121, 180, 1) 0%, rgba(136, 216, 255, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.blue {
+    color: #0084D4;
+}
+
+.grey {
+    color: #B0B0B0;
+}
+
+.info {
+    color: #4F4F4F;
+    font-size: 18px;
+}
+
+.doctor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mt-50 {
+    margin-top: 80px;
+}
+
+/* appointment */
+.appointment {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.appointment-box {
+    padding: 35px 35px;
+    border: 2px solid #95DDFF;
+    box-shadow: 1px 1px 10px #0000002d;
+    border-radius: 15px;
+    z-index: 2;
+    background-color: white;
+}
+
+.appointment-details h3 {
+    color: #0069AB;
+}
+
+.component label {
+    font-size: 18px;
+    color: #888888;
+}
+
+.mail-box {
+    width: 100%;
+    color: #252424e4;
+    font-size: 16px;
+    opacity: 0.7;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #656363b6;
+}
+
+.appointment-btn {
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    background-color: #00A4F4;
+    border: 1px solid #00A4F4;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 22px;
+    transition: var(--transition-main);
+}
+
+.appointment-btn:hover {
+    background-color: white;
+    color: #00A4F4;
+    border: 1px solid #00A4F4;
+}
+
+.backgroung-dots {
+    left: 150px;
+    bottom: -50px;
+    z-index: 1;
+}
+
+/* Service */
+.service {
+    padding: 100px 0;
+    padding-top: 150px;
+}
+
+.service-heading {
+    font-size: 35px;
+    color: #3D3D3D;
+}
+
+.service-heading span {
+    background: rgb(136, 216, 255);
+    background: linear-gradient(90deg, rgba(136, 216, 255, 1) 0%, rgba(1, 121, 180, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.service-info p {
+    font-size: 18px;
+    color: #B0B0B0;
+}
+
+.service-box {
+    padding: 35px 40px;
+    border: 2px solid #95DDFF;
+    box-shadow: 1px 1px 10px #0000002d;
+    border-radius: 15px;
+    background-color: white;
+    transition: var(--transition-main);
+    height: 100%;
+}
+
+.service-box:hover {
+    box-shadow: 3px 3px 20px #0000002d;
+}
+
+.service-box h5 {
+    color: #0069AB;
+}
+
+.service-box p {
+    color: #6D6D6D;
+    font-weight: 500;
+}
+
+.upper-wave {
+    top: 250px;
+    left: 50px;
+}
+
+.lower-wave {
+    bottom: 80px;
+    right: 50px;
+}
+
+/* about */
+.about-us {
+    padding: 100px 0;
+    padding-top: 50px;
+}
+
+.about-heading {
+    font-size: 35px;
+    color: #3D3D3D;
+}
+
+.about-heading span {
+    background: rgb(1, 121, 180);
+    background: linear-gradient(90deg, rgba(1, 121, 180, 1) 0%, rgba(136, 216, 255, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.about-box {
+    padding: 60px 60px;
+    border: 2px solid #95DDFF;
+    box-shadow: 1px 1px 10px #0000002d;
+    border-radius: 15px;
+    background-color: white;
+    transition: var(--transition-main);
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+}
+
+.about-content p {
+    color: #6D6D6D;
+    font-weight: 500;
+}
+
+.learn-btn {
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    background-color: #00A4F4;
+    border: 1px solid #00A4F4;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 22px;
+    transition: var(--transition-main);
+}
+
+.learn-btn:hover {
+    background-color: white;
+    color: #00A4F4;
+    border: 1px solid #00A4F4;
+}

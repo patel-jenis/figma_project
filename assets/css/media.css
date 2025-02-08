@@ -1,0 +1,24 @@
+@media (max-width:1400px) {
+    .backgroung-dots {
+        left: 100px;
+        bottom: -50px;
+    }
+}
+@media (max-width:1200px) {
+    .backgroung-dots {
+        left: 60px;
+        bottom: -50px;
+    }
+}
+@media (max-width:500px) {
+    body {
+        padding: 0 10px;
+    }
+    .about-box {
+        padding: 25px;
+    }
+    .service {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
