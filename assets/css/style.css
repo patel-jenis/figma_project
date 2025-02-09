@@ -365,7 +365,8 @@ h1 span {
     padding: 30px;
 }
 
-.counter, .wrapper span {
+.counter,
+.wrapper span {
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -378,6 +379,62 @@ h1 span {
 .lower-wave.ball {
     bottom: 20px;
 }
+
 .upper-wave.ball {
     top: 200px;
+}
+
+.contact-us {
+    padding: 100px 0;
+}
+
+/* Contact us */
+.doctor-list {
+    background: rgb(53, 189, 255);
+    background: linear-gradient(90deg, rgba(53, 189, 255, 1) 0%, rgba(0, 140, 208, 1) 100%);
+    border-radius: 15px;
+    position: relative;
+    z-index: 99;
+}
+
+.doctor-list img {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: contain;
+    /* margin-top: -30px; */
+}
+
+.dr-info {
+    padding: 50px 50px;
+    color: white;
+}
+.appointment-btn.wt-btn {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+.appointment-btn.wt-btn span{
+    background-color: white;
+    background: rgb(136, 216, 255);
+    background: linear-gradient(90deg, rgba(136, 216, 255, 1) 0%, rgba(1, 121, 180, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    transition: var(--transition-main);
+}
+.appointment-btn.wt-btn:hover span{
+    background-color: white;
+    background: rgb(1, 121, 180);
+    background: linear-gradient(90deg, rgba(1, 121, 180, 1) 0%, rgba(136, 216, 255, 1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+.lower-wave.dots {
+    bottom: 80px;
+    right: 220px;
+    z-index: 1;
+}
+.upper-wave.dots {
+    top: 350px;
+    left: 220px;
+    z-index: -1;
 }
