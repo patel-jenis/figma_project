@@ -18,6 +18,23 @@
 
 <body>
 
+    <div class="pre-loader">
+        <div class="absCenter ">
+            <div class="loaderPill">
+                <div class="loaderPill-anim">
+                    <div class="loaderPill-anim-bounce">
+                        <div class="loaderPill-anim-flop">
+                            <div class="loaderPill-pill"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="loaderPill-floor">
+                    <div class="loaderPill-floor-shadow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container">
@@ -157,7 +174,7 @@
                                                 Contact Number
                                             </label>
                                             <input type="tel" name="phone" class="mail-box" id="phone"
-                                                placeholder="Enter Your Email Address" autocomplete="off" required>
+                                                placeholder="Enter Your Number" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-3 col-lg-6">
@@ -166,8 +183,7 @@
                                                 <img src="./assets/images/Group.png" alt="email" width="25px">
                                                 Date of Appointment
                                             </label>
-                                            <input type="date" name="date" class="mail-box" id="date"
-                                                placeholder="Enter Your Email Address" autocomplete="off" required>
+                                            <input type="date" name="date" class="mail-box" id="date" autocomplete="off" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-3 col-lg-6">
@@ -535,8 +551,7 @@
                                     <div class="support-form">
                                         <div class="d-flex align-items-center gap-2">
                                             <label for="fname"><img src="./assets/images/ic_round-email (2).png" alt="icon"></label>
-                                            <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name"
-                                                required>
+                                            <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name" autocomplete="off" required>
                                         </div>
                                     </div>
                                 </div>
@@ -544,8 +559,7 @@
                                     <div class="support-form">
                                         <div class="d-flex align-items-center gap-2">
                                             <label for="email"><img src="./assets/images/ic_round-email (3).png" alt="icon"></label>
-                                            <input type="email" id="email" name="Email" placeholder="Enter Your Email Address"
-                                                required>
+                                            <input type="email" id="email" name="Email" placeholder="Enter Your Email Address" autocomplete="off" required>
                                         </div>
                                     </div>
                                 </div>
@@ -658,12 +672,15 @@
                 </ul>
             </nav>
         </div>
-    </div>
+    </div> 
 
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/bootsrap.js"></script>
     <script src="./assets/js/counter.js"></script>
     <script>
+        $(window).on("load", function(){
+            $(".pre-loader").delay(1500).fadeOut()
+        })
         $(document).ready(function () {
             $(".menus li a").on("click", function () {
                 $(".menus li a").removeClass("active")
